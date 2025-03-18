@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+@media (min-width: 300px) and (max-width: 1920px) {
+  body {
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 260px;
+    height: 450px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 10px;
+    padding: 20px;
+  }
+  .card .image .box {
+    position: absolute;
+    width: 260px;
+    height: 260px;
+    border-radius: 10px;
+  }
+  .card .image .box:hover {
+    background-color: hsl(178, 100%, 50%);
+    opacity: 0.4;
+    cursor: pointer;
+  }
+  .box:hover::after {
+    content: url(images/icon-view.svg);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .card .image #img-2 {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .card .text h1{
+    font-family: "Outfit", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: hsl(0, 0%, 100%);
+  }
+  .card .text h1:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+  }
+  .card .text p{
+    font-family: "Outfit", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color:hsl(215, 51%, 70%);
+    line-height: 1.5;
+  }
+
+  .card .eth{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -10px;
+  }
+  .card .eth .number{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+  }
+  .card .eth .number img{
+    width: 13px;
+    height: 20px;
+  }
+  .card .eth .number p{
+    font-family: "Outfit", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: hsl(178, 100%, 50%);
+  }
+  .card .eth .time{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+  }
+  .card .eth .time img{
+    width: 15px;
+    height: 15px;
+  }
+  .card .eth .time p{
+    font-family: "Outfit", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: hsl(215, 51%, 70%);
+  }
+
+  .card .line{
+    color: hsl(215, 32%, 27%);
+    margin-top: -15px;
+  }
+  .card .avatar{
+    display: flex;
+    gap: 10px;
+  }
+  .card .avatar .avatar-img{
+    overflow: hidden;
+    height: 31px;
+    width: 31px;
+    margin-top: 10px;
+    background-color: aliceblue;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card .avatar .avatar-img img{
+    width: 30px;
+  }
+  .card .avatar p{
+    font-family: "Outfit", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: hsl(215, 51%, 70%);
+  }
+  .card .avatar p span{
+    color: hsl(0, 0%, 100%);
+  }
+  .card .avatar p span:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+  }
+}
